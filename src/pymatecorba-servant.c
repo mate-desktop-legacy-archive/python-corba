@@ -30,7 +30,10 @@
    (MATECORBA_MAJOR_VERSION == x && (MATECORBA_MINOR_VERSION > y || \
      (MATECORBA_MINOR_VERSION == y && MATECORBA_MICRO_VERSION >= z))))
 
-#if !MATECORBA_VERSION_CHECK(2,7,0)
+#if 0 /* !MATECORBA_VERSION_CHECK(2,7,0) */
+	/* #if !MATECORBA_VERSION_CHECK(2,7,0)
+	 * Esto no funciona si se usa el modelo de version a partir de 1.x
+	 * Dejo esta linea, por si se quiere retro compatibilidad con Orbit 2.6 o menor */
 #  define MATECORBA2_INTERNAL_API
 #endif
 #include "pymatecorba-private.h"
@@ -89,7 +92,10 @@ _pymatecorba_register_skel(MateCORBA_IInterface *iinterface)
 
     info = g_new0(PyMateCORBAInterfaceInfo, 1);
     info->iinterface = iinterface;
-#if MATECORBA_VERSION_CHECK(2,7,0)
+#if 0 /* !MATECORBA_VERSION_CHECK(2,7,0) */
+	/* #if !MATECORBA_VERSION_CHECK(2,7,0)
+	 * Esto no funciona si se usa el modelo de version a partir de 1.x
+	 * Dejo esta linea, por si se quiere retro compatibilidad con Orbit 2.6 o menor */
     info->class_info.impl_finder = &impl_finder_func;
 #else
     info->class_info.small_relay_call = &impl_finder_func;
