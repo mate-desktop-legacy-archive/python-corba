@@ -38,7 +38,8 @@ AM_PATH_PYTHON([2.4])
 AM_CHECK_PYTHON_HEADERS(,[AC_MSG_ERROR(could not find Python headers)])
 CC="$PYTHON_CC"
 
-PKG_CHECK_MODULES([PYMATECORBA], [MateCORBA-2.0 >= matecorba2_required_version])
+PKG_CHECK_MODULES([PYMATECORBA], [MateCORBA-2.0])
+# MateCORBA-2.0 >= matecorba2_required_version
 
 # link with the imodule service if it is available
 AC_MSG_CHECKING([for the MateCORBA2 imodule service])
