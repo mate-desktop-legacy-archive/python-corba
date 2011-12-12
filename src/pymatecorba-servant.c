@@ -92,7 +92,7 @@ _pymatecorba_register_skel(MateCORBA_IInterface *iinterface)
 
     info = g_new0(PyMateCORBAInterfaceInfo, 1);
     info->iinterface = iinterface;
-#if 0 /* !MATECORBA_VERSION_CHECK(2,7,0) */
+#if 1 /* !MATECORBA_VERSION_CHECK(2,7,0) */
 	/* #if !MATECORBA_VERSION_CHECK(2,7,0)
 	 * Esto no funciona si se usa el modelo de version a partir de 1.x
 	 * Dejo esta linea, por si se quiere retro compatibilidad con Orbit 2.6 o menor */
