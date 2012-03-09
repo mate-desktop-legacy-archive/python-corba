@@ -2,11 +2,11 @@ dnl -*- mode: autoconf -*-
 AC_PREREQ(2.52)
 
 m4_define(pymatecorba_major_version, 1)
-m4_define(pymatecorba_minor_version, 1)
+m4_define(pymatecorba_minor_version, 2)
 m4_define(pymatecorba_micro_version, 0)
 m4_define(pymatecorba_version, pymatecorba_major_version.pymatecorba_minor_version.pymatecorba_micro_version)
 
-m4_define(matecorba2_required_version, 1.1.0)
+m4_define(matecorba2_required_version, 1.2.0)
 
 AC_INIT([pymatecorba], [pymatecorba_version],
         [http://www.mate-desktop.org/])
