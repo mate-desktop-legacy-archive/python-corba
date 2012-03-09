@@ -1,7 +1,7 @@
 
 INCLUDES = $(PYTHON_INCLUDES) $(PYMATECORBA_CFLAGS) -DMATECORBA2_STUBS_API
 
-pyexec_PYTHON = CORBA.py PortableServer.py
+pyexec_PYTHON = MATECORBA.py MatePortableServer.py
 
 pyexec_LTLIBRARIES = MateCORBA.la
 
