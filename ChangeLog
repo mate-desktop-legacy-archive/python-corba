@@ -1,3 +1,17 @@
+commit 70f47ee581cf2da17d75d95269b5c2e08d5edcb9
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Fri Mar 9 12:08:57 2012 +0100
+
+    update for 1.2 release
+
+ AUTHORS           |   11 +-
+ ChangeLog         |  491 ++++++++++++++-------------------------
+ ChangeLog.pre-2-0 |  657 -----------------------------------------------------
+ MAINTAINERS       |   12 -
+ autogen.sh        |    4 +-
+ configure.in      |    4 +-
+ 6 files changed, 182 insertions(+), 997 deletions(-)
+
 commit 0fdd56f5ec19119337e815e505a5526d55503baa
 Author: Stefano Karapetsas <stefano@karapetsas.com>
 Date:   Fri Mar 9 12:01:02 2012 +0100
@@ -18,7 +32,7 @@ Date:   Mon Dec 12 10:52:19 2011 -0200
     Update src/pymatecorba-servant.c
 
  src/pymatecorba-servant.c |    4 ++--
- 1 files changed, 2 insertions(+), 2 deletions(-)
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit 1a5722a26d3bb17839270da569ca24905159068f
 Author: Perberos <perberos@gmail.com>
@@ -27,7 +41,7 @@ Date:   Mon Dec 12 10:51:56 2011 -0200
     Update src/pymatecorba-servant.c
 
  src/pymatecorba-servant.c |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit a6ed109b3ad3e0d24f628f5582fc49c1f930b9e9
 Author: Perberos <perberos@gmail.com>
@@ -36,7 +50,7 @@ Date:   Mon Dec 12 10:30:59 2011 -0200
     Update configure.in
 
  configure.in |    3 ++-
- 1 files changed, 2 insertions(+), 1 deletions(-)
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 
 commit 4551bbf63fdee0067db72c0b2b42fdddba4223c4
 Author: Perberos <perberos@gmail.com>
@@ -45,7 +59,7 @@ Date:   Mon Dec 12 10:10:46 2011 -0200
     Update src/pymatecorba-servant.c
 
  src/pymatecorba-servant.c |   10 ++++++++--
- 1 files changed, 8 insertions(+), 2 deletions(-)
+ 1 file changed, 8 insertions(+), 2 deletions(-)
 
 commit d34f616c6dea45c64cd03fb66234b90d94675714
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -79,7 +93,7 @@ Date:   Sun Dec 11 14:53:50 2011 +0100
  src/Makefile.in               |  587 --
  tests/Makefile.in             |  508 -
  tests/c-inproc/Makefile.in    |  505 -
- 15 files changed, 0 insertions(+), 37098 deletions(-)
+ 15 files changed, 37098 deletions(-)
 
 commit 74140880b601c0bc0338a610185f848d4f29fa16
 Author: Stefano Karapetsas <stefano@karapetsas.com>
@@ -167,4 +181,4 @@ Date:   Sun Dec 11 12:16:51 2011 +0100
  tests/everything_client.py               |  366 +
  tests/everything_inprocess.py            |   19 +
  tests/everything_server.py               |  246 +
- 80 files changed, 54533 insertions(+), 0 deletions(-)
+ 80 files changed, 54533 insertions(+)
